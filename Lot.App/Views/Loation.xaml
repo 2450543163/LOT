@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Lot.App.Views.Loation"
+             BackgroundColor="#131e54"
+             Title="零陵路配电房1">
+    <!--定义静态样式-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="TextColor">White</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="#101745" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="零陵路配电房1(b00001)" TextColor="{StaticResource TextColor}" Grid.ColumnSpan="2"></Label>
+                <BoxView BackgroundColor="White" Grid.ColumnSpan="2" Grid.Row="1" Opacity="0.1"></BoxView>
+                <Label Text="PowerStation" TextColor="{StaticResource TextColor}" Grid.ColumnSpan="2" Grid.Row="2"></Label>
+                <BoxView BackgroundColor="White" Grid.ColumnSpan="2" Grid.Row="3" Opacity="0.1" ></BoxView>
+
+                <Label Text="上海市" TextColor="{StaticResource TextColor}" Grid.Row="4"></Label>
+                <Label Text="上海市徐汇区零陵路221号" Grid.Column="1" Grid.Row="4" TextColor="{StaticResource TextColor}"></Label>
+                <BoxView BackgroundColor="White" Grid.ColumnSpan="2" Grid.Row="5" Opacity="0.1" ></BoxView>
+                <Label Text="运行中" TextColor="{StaticResource TextColor}" Grid.Row="6"></Label>
+                <Label Text="上海医疗器械高技术公司" TextColor="{StaticResource TextColor}" Grid.Row="8"></Label>
+            </Grid>
+            <Label Text="联系人" Margin="10,5,0,0"   TextColor="{StaticResource TextColor}" Opacity="0.5"></Label>
+
+            <Grid BackgroundColor="#101745" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="测试" TextColor="{StaticResource  TextColor}"></Label>
+                <Label Text="15255889742" Grid.Column="1" TextColor="{StaticResource TextColor}" HorizontalOptions="End"></Label>
+            </Grid>
+
+            <Label Text="网关" Margin="10,10,0,0"   TextColor="{StaticResource TextColor}" Opacity="0.5"></Label>
+            <Grid BackgroundColor="#101745" Padding="10" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="采集器01(01)" TextColor="{d:StaticResource TextColor}"></Label>
+                <Button  Text="离线" BackgroundColor="#9BA8B9" Grid.Column="1" CornerRadius="30" TextColor="{d:StaticResource TextColor}"   HeightRequest="10" WidthRequest="40"></Button>
+                <Label Text="DTU" TextColor="{d:StaticResource TextColor}" Grid.Row="1"></Label>
+                <Label Text="12/10 4:29" TextColor="{d:StaticResource TextColor}" Grid.Row="1" Grid.Column="1"></Label>
+            </Grid>
+
+            <Grid BackgroundColor="#101745" Padding="10" RowSpacing="10" Margin="0,5,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="采集器02(02)" TextColor="{d:StaticResource TextColor}"></Label>
+                <Button  Text="从未连接" BackgroundColor="#9BA8B9" Grid.Column="1" CornerRadius="30" TextColor="{d:StaticResource TextColor}"   HeightRequest="10" WidthRequest="40"></Button>
+                <Label Text="DTU" TextColor="{d:StaticResource TextColor}" Grid.Row="1"></Label>
+                <Label Text="12/10 4:29" TextColor="{d:StaticResource TextColor}" Grid.Row="1" Grid.Column="1"></Label>
+            </Grid>
+
+            <ListView BackgroundColor="#101745" Margin="0,5,0,0"  x:Name="listview" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="15">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="1"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                    <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding Icon}" Aspect="AspectFit" HeightRequest="20" WidthRequest="20" HorizontalOptions="Start"></Image>
+                                <Label Text="{Binding Text}" TextColor="{d:StaticResource TextColor}" Grid.Column="1"  HorizontalOptions="Start" ></Label>
+                                <Label Text="{Binding Arrow}" Grid.Column="2" TextColor="{d:StaticResource TextColor}" HorizontalOptions="End"></Label>
+                                <BoxView BackgroundColor="White" Grid.Row="1" Grid.ColumnSpan="3" Opacity="0.5"></BoxView>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

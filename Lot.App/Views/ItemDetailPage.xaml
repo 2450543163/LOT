@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Lot.App.View.ItemDetailPage"
+             Title="任务详情"
+             BackgroundColor="#131e54"
+             >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="TextColor">AliceBlue</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView >
+        <StackLayout >
+            <Grid BackgroundColor="#1F8FFB" Padding="5,10,10,10">
+                <Label Text="《"  VerticalOptions="CenterAndExpand" FontSize="Medium" TextColor="{StaticResource TextColor}" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="LabBacked" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+            <!--第一个表格-->
+            <Grid BackgroundColor="#121a44" Padding="5,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label x:Name="LabTitle" FontSize="Medium" TextColor="{StaticResource TextColor}"/>
+                <Label x:Name="LabTime" FontSize="Small" Grid.Column="1" TextColor="{StaticResource TextColor}" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Label x:Name="Labbuild"  FontSize="Small" Grid.Row="1" TextColor="{StaticResource TextColor}"/>
+                <Label x:Name="Labaddress"  FontSize="Small" Grid.Row="2" TextColor="{StaticResource TextColor}" />
+            </Grid>
+
+            <!--第二个表格的开始-->
+            <ListView x:Name="ItemsListView"
+                ItemsSource="{Binding Id}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid BackgroundColor="#121a44" Margin="0,-6,0,0" Padding="2,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="36"></RowDefinition>
+                                    <RowDefinition Height="36"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Image Source="https://dss1.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/pic/item/5243fbf2b2119313c2a23ba367380cd790238dc4.jpg" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="CenterAndExpand" Grid.RowSpan="2" HorizontalOptions="Center"></Image>
+                                <Label Text="{Binding Name}"  TextColor="{StaticResource TextColor}" FontSize="Default" Grid.Column="1"   VerticalOptions="Center"/>
+                                <Label   Text="{Binding Tel}" FontSize="Small"  TextColor="{StaticResource TextColor}" Grid.Row="1" VerticalOptions="Center" Grid.Column="1"/>
+                             </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!--第三个表格开始-->
+            <Grid BackgroundColor="#121a44" Padding="10" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="{Binding Monkey.Name}"  FontSize="Small" TextColor="{StaticResource TextColor}"/>
+                <Label Text="{Binding  Monkey.Time}" FontSize="Small" Grid.Column="1" TextColor="{StaticResource TextColor}" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Label Text="OffLine"  FontSize="Small" Grid.Row="1" TextColor="{StaticResource TextColor}"/>
+                <Label Text="设备传感器485传输发生超时升级为离线故障，请尽快处理"  FontSize="Small" Grid.Row="2" TextColor="{StaticResource TextColor}"  Grid.ColumnSpan="2"/>
+            </Grid>
+
+            <!--第四个表格开始-->
+            <Grid BackgroundColor="#121a44" Padding="10" Margin="0,5,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.7*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="设备传感器485传输发生超时升级为离线故障，请尽快处理"   FontSize="Small" TextColor="{StaticResource TextColor}" Grid.ColumnSpan="2"/>
+                <Frame Padding="0" BackgroundColor="AliceBlue" Grid.Row="1" >
+                    <Image Source="SummaryCurrent.png" Aspect="AspectFit" WidthRequest="40" HeightRequest="40"        VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                </Frame>
+            </Grid>
+
+            <Label Text="评价内容" HorizontalOptions="Center" VerticalOptions="Center" TextColor="{StaticResource TextColor}" FontSize="Small"/>
+
+            <Grid BackgroundColor="#121a44" Padding="15" Margin="0,10,0,0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="SummaryCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="Center" HorizontalOptions="Start"></Image>
+                <Image Source="SummaryCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="Center" HorizontalOptions="Start" Grid.Column="1"></Image>
+                <Image Source="SummaryCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="Center" HorizontalOptions="Start"  Grid.Column="2"></Image>
+                <Image Source="SummaryCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="Center" HorizontalOptions="Start"  Grid.Column="3"></Image>
+                <Image Source="SummaryCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="Center" HorizontalOptions="Start"  Grid.Column="4"></Image>
+            </Grid>
+
+            <!--第五个表格开始-->
+            <Grid  Margin="0,10,10,10">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"></RowDefinition>
+                    <RowDefinition Height="10"></RowDefinition>
+                    <RowDefinition Height="35"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button Text="快速到场" BorderColor="White" BorderWidth="1" BackgroundColor="#131e54" TextColor="White" Margin="20,0,0,0"></Button>
+                <Button Text="着装规范" BorderColor="White" BorderWidth="1" BackgroundColor="#131e54" Grid.Column="1" TextColor="White" Margin="20,0,0,0"></Button>
+                <Button Text="态度很好" BorderColor="White" BorderWidth="1" BackgroundColor="#131e54" Grid.Column="2" TextColor="White" Margin="20,0,0,0"></Button>
+                <Button Text="服务周到" BorderColor="White" BorderWidth="1" BackgroundColor="#131e54" Grid.Row="2" TextColor="White" Margin="20,0,0,0"></Button>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
