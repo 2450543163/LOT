@@ -2038,11 +2038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\LOT\\App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
+      "projectUniqueName": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
       "projectName": "Lot.App.Android",
-      "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
+      "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
       "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\LOT\\App\\LOT\\Lot.App.Android\\obj\\",
+      "outputPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2063,8 +2063,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj": {
-              "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj"
+            "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj": {
+              "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj"
             }
           }
         }

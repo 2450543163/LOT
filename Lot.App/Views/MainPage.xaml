@@ -55,7 +55,7 @@
                     iOS="DeviceCurrent.png" />
             </NavigationPage.Icon>
             <x:Arguments>
-                <views1:AlarmPage />
+                <views:DevicePage />
             </x:Arguments>
         </NavigationPage>
 

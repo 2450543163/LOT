@@ -672,11 +672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj",
+      "projectUniqueName": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj",
       "projectName": "Lot.App",
-      "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj",
+      "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj",
       "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\obj\\",
+      "outputPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
