@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\work\\LOT\\Lot.App\\Lot.App.Android\\Lot.App.Android.csproj": {}
+    "D:\\work\\LOT\\App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj": {}
   },
   "projects": {
-    "D:\\work\\LOT\\Lot.App\\Lot.App.Android\\Lot.App.Android.csproj": {
+    "D:\\work\\LOT\\App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\LOT\\Lot.App\\Lot.App.Android\\Lot.App.Android.csproj",
+        "projectUniqueName": "D:\\work\\LOT\\App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
         "projectName": "Lot.App.Android",
-        "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App.Android\\Lot.App.Android.csproj",
+        "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
         "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\LOT\\Lot.App\\Lot.App.Android\\obj\\",
+        "outputPath": "D:\\work\\LOT\\App\\LOT\\Lot.App.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj": {
-                "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj"
+              "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj": {
+                "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj"
               }
             }
           }
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj": {
+    "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj",
+        "projectUniqueName": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj",
         "projectName": "Lot.App",
-        "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj",
+        "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj",
         "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\LOT\\Lot.App\\Lot.App\\obj\\",
+        "outputPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

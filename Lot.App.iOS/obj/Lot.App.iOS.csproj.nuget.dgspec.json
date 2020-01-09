@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\work\\LOT\\Lot.App\\Lot.App.iOS\\Lot.App.iOS.csproj": {}
+    "D:\\work\\LOT\\App\\LOT\\Lot.App.iOS\\Lot.App.iOS.csproj": {}
   },
   "projects": {
-    "D:\\work\\LOT\\Lot.App\\Lot.App.iOS\\Lot.App.iOS.csproj": {
+    "D:\\work\\LOT\\App\\LOT\\Lot.App.iOS\\Lot.App.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\LOT\\Lot.App\\Lot.App.iOS\\Lot.App.iOS.csproj",
+        "projectUniqueName": "D:\\work\\LOT\\App\\LOT\\Lot.App.iOS\\Lot.App.iOS.csproj",
         "projectName": "Lot.App.iOS",
-        "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App.iOS\\Lot.App.iOS.csproj",
+        "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App.iOS\\Lot.App.iOS.csproj",
         "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\LOT\\Lot.App\\Lot.App.iOS\\obj\\",
+        "outputPath": "D:\\work\\LOT\\App\\LOT\\Lot.App.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj": {
-                "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj"
+              "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj": {
+                "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj": {
+    "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj",
+        "projectUniqueName": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj",
         "projectName": "Lot.App",
-        "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App\\Lot.App.csproj",
+        "projectPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\Lot.App.csproj",
         "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\LOT\\Lot.App\\Lot.App\\obj\\",
+        "outputPath": "D:\\work\\LOT\\App\\LOT\\Lot.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
