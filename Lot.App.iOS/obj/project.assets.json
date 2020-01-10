@@ -1227,24 +1227,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\24505\\.nuget\\packages\\": {},
+    "C:\\Users\\asus\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.iOS\\Lot.App.iOS.csproj",
+      "projectUniqueName": "D:\\work\\LOT\\Lot.App.iOS\\Lot.App.iOS.csproj",
       "projectName": "Lot.App.iOS",
-      "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.iOS\\Lot.App.iOS.csproj",
-      "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.iOS\\obj\\",
+      "projectPath": "D:\\work\\LOT\\Lot.App.iOS\\Lot.App.iOS.csproj",
+      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+      "outputPath": "D:\\work\\LOT\\Lot.App.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\24505\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1258,8 +1258,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj": {
-              "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj"
+            "D:\\work\\LOT\\Lot.App\\Lot.App.csproj": {
+              "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App.csproj"
             }
           }
         }
