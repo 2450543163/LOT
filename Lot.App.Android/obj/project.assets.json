@@ -2032,24 +2032,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asus\\.nuget\\packages\\": {},
+    "C:\\Users\\24505\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
+      "projectUniqueName": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
       "projectName": "Lot.App.Android",
-      "projectPath": "D:\\work\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
-      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\LOT\\Lot.App.Android\\obj\\",
+      "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
+      "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
+      "outputPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\24505\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2063,8 +2063,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\work\\LOT\\Lot.App\\Lot.App.csproj": {
-              "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App.csproj"
+            "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj": {
+              "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj"
             }
           }
         }
