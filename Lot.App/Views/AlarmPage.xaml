@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="Lot.App.View.AlarmPage"
              BackgroundColor="#131e54"
-             Title="报警的列表">
+             Title="报警列表">
     <StackLayout>
         <ListView x:Name="ItemsListView"
                 ItemsSource="{Binding Id}"
