@@ -2,7 +2,7 @@ package crc64b74868aba566bdb1;
 
 
 public class MainActivity
-	extends crc643f46942d9dd1fff9.FormsAppCompatActivity
+	extends crc64b74868aba566bdb1.XFormsAppCompatDroid
 	implements
 		mono.android.IGCUserPeer
 {

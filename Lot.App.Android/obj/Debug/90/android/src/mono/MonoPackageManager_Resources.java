@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Lot.App.Android.dll" comes first in this list. */
 		"Lot.App.Android.dll",
+		"ExifLib.dll",
 		"FormsViewGroup.dll",
 		"Lot.App.dll",
 		"Newtonsoft.Json.Bson.dll",
@@ -50,6 +51,13 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"XLabs.Core.dll",
+		"XLabs.Forms.dll",
+		"XLabs.Forms.Droid.dll",
+		"XLabs.Ioc.dll",
+		"XLabs.Platform.dll",
+		"XLabs.Platform.Droid.dll",
+		"XLabs.Serialization.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

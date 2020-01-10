@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj": {}
+    "D:\\work\\LOT\\Lot.App\\Lot.App.csproj": {}
   },
   "projects": {
-    "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj": {
+    "D:\\work\\LOT\\Lot.App\\Lot.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj",
+        "projectUniqueName": "D:\\work\\LOT\\Lot.App\\Lot.App.csproj",
         "projectName": "Lot.App",
-        "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj",
-        "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-        "outputPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\obj\\",
+        "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "D:\\work\\LOT\\Lot.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\24505\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -57,13 +57,17 @@
               "target": "Package",
               "version": "[11.0.2, )"
             },
+            "XLabs.Forms": {
+              "target": "Package",
+              "version": "[2.0.5782, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.908675, )"
+              "version": "[4.4.0.991265, )"
             }
           },
           "imports": [

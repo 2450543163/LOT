@@ -17,12 +17,15 @@ namespace Lot.App
         {
             InitializeComponent();
 
-            MainPage = new MainPage()
-            {
-                BarBackgroundColor = Color.FromHex("#0d1431"),
-                BackgroundColor = Color.FromHex("#131e54"),
+            //MainPage = new MainPage()
+            //{
+            //    BarBackgroundColor = Color.FromHex("#0d1431"),
+            //    BackgroundColor = Color.FromHex("#131e54"),
                 
-            };
+            //};
+
+
+            MainPage = new PersonPage();
         }
 
         protected override void OnStart()

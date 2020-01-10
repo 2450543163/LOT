@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "ExifLib.PCL/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.4": {
         "type": "package",
         "dependencies": {
@@ -807,7 +816,7 @@
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.908675": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3",
@@ -835,14 +844,81 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "XLabs.Core/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll": {}
+        }
+      },
+      "XLabs.Forms/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.Core": "[2.0.5782]",
+          "XLabs.IoC": "[2.0.5782]",
+          "XLabs.Platform": "[2.0.5782]",
+          "XLabs.Serialization": "[2.0.5782]",
+          "Xamarin.Forms": "1.5.1.6471"
+        },
+        "frameworkAssemblies": [
+          "Mono.Android.Export"
+        ],
+        "compile": {
+          "lib/MonoAndroid/XLabs.Forms.Droid.dll": {},
+          "lib/MonoAndroid/XLabs.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/XLabs.Forms.Droid.dll": {},
+          "lib/MonoAndroid/XLabs.Forms.dll": {}
+        }
+      },
+      "XLabs.IoC/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        }
+      },
+      "XLabs.Platform/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "ExifLib.PCL": "1.0.1",
+          "XLabs.Core": "[2.0.5782]"
+        },
+        "frameworkAssemblies": [
+          "Mono.Android.Export"
+        ],
+        "compile": {
+          "lib/MonoAndroid/XLabs.Platform.Droid.dll": {},
+          "lib/MonoAndroid/XLabs.Platform.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/XLabs.Platform.Droid.dll": {},
+          "lib/MonoAndroid/XLabs.Platform.dll": {}
+        }
+      },
+      "XLabs.Serialization/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll": {}
+        }
+      },
       "Lot.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.4",
           "Newtonsoft.Json": "11.0.2",
+          "XLabs.Forms": "2.0.5782",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/Lot.App.dll": {}
@@ -854,6 +930,18 @@
     }
   },
   "libraries": {
+    "ExifLib.PCL/1.0.1": {
+      "sha512": "16KG9oXTPJkjCRq2xQmfPfJqCfcCjK3h034oazOE61LM4kddMr50a6EgrOV+F7RtIzVVd5ATEZRCiNWnnWqDkA==",
+      "type": "package",
+      "path": "exiflib.pcl/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "exiflib.pcl.1.0.1.nupkg.sha512",
+        "exiflib.pcl.nuspec",
+        "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.4": {
       "sha512": "OdBVC2bQWkf9qDd7Mt07ev4SwIdu6VmLBMTWC0D5cOP/HWSXyv/77otwtXVrAo42duNjvXOjzjP5oOI9m1+DTQ==",
       "type": "package",
@@ -1769,10 +1857,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.3.0.908675": {
-      "sha512": "kXrbXKJvXYF4cKjs1Jsb+pQFEnFGl0AONYSeABjgOJqN/o5Y4zC0XXQ68xiUI81PKQTuRB5F3oDom2t5ccJDZw==",
+    "Xamarin.Forms/4.4.0.991265": {
+      "sha512": "FhG5Sq2wzY8A6IzW3iMVVKqQf4G3hry0joDDGnw1SWBQ5cfW6YNpOiuh2wB/BRPoVnO0SuUBY+b1NPXve72NDQ==",
       "type": "package",
-      "path": "xamarin.forms/4.3.0.908675",
+      "path": "xamarin.forms/4.4.0.991265",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2001,7 +2089,9 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PickerStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf",
@@ -2013,8 +2103,125 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.3.0.908675.nupkg.sha512",
+        "xamarin.forms.4.4.0.991265.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "XLabs.Core/2.0.5782": {
+      "sha512": "XLRztFIAjUYfjaaur4aPa/gjBNOwnAoelnmm83v4U0R5dJcWhll5Sci3s8nJWpHv1unwX1TuRsWT0rqMNm0PzA==",
+      "type": "package",
+      "path": "xlabs.core/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/XLabs.Core.XML",
+        "lib/Xamarin.iOS10/XLabs.Core.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll",
+        "xlabs.core.2.0.5782.nupkg.sha512",
+        "xlabs.core.nuspec"
+      ]
+    },
+    "XLabs.Forms/2.0.5782": {
+      "sha512": "ky3fCcqK1jaSMyIavo8g4Jb/KWhMGH7AlDzFtmP/vNNxiYWHnkmCz1kIvuBNodEwbqJgINpPUcvfW5IbBxbVYg==",
+      "type": "package",
+      "path": "xlabs.forms/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/XLabs.Forms.Droid.XML",
+        "lib/MonoAndroid/XLabs.Forms.Droid.dll",
+        "lib/MonoAndroid/XLabs.Forms.XML",
+        "lib/MonoAndroid/XLabs.Forms.dll",
+        "lib/Xamarin.iOS10/XLabs.Forms.XML",
+        "lib/Xamarin.iOS10/XLabs.Forms.dll",
+        "lib/Xamarin.iOS10/XLabs.Forms.iOS.XML",
+        "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.dll",
+        "lib/wp8/XLabs.Forms.WP8.XML",
+        "lib/wp8/XLabs.Forms.WP8.dll",
+        "lib/wp8/XLabs.Forms.XML",
+        "lib/wp8/XLabs.Forms.dll",
+        "lib/wpa81/XLabs.Forms.WP8.XML",
+        "lib/wpa81/XLabs.Forms.WP8.dll",
+        "lib/wpa81/XLabs.Forms.XML",
+        "lib/wpa81/XLabs.Forms.dll",
+        "xlabs.forms.2.0.5782.nupkg.sha512",
+        "xlabs.forms.nuspec"
+      ]
+    },
+    "XLabs.IoC/2.0.5782": {
+      "sha512": "lFhk1z7pJSlwz2OnxGsZexpzrq5pmH1jvu07oX92ZZEMbJzmvlK9s76G54yE6hQwpv3DVrNtcZ4ubVT1/makRA==",
+      "type": "package",
+      "path": "xlabs.ioc/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.dll",
+        "xlabs.ioc.2.0.5782.nupkg.sha512",
+        "xlabs.ioc.nuspec"
+      ]
+    },
+    "XLabs.Platform/2.0.5782": {
+      "sha512": "n5ZgLrh4Ut7EflUKmVii4feQ5xsLQTyTPYf8IDuldOi2furuxSPfHr2H4dpGTbmDxiB21sS0ZA6tdhoQQM27uA==",
+      "type": "package",
+      "path": "xlabs.platform/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/XLabs.Platform.Droid.XML",
+        "lib/MonoAndroid/XLabs.Platform.Droid.dll",
+        "lib/MonoAndroid/XLabs.Platform.XML",
+        "lib/MonoAndroid/XLabs.Platform.dll",
+        "lib/Xamarin.iOS10/XLabs.Platform.XML",
+        "lib/Xamarin.iOS10/XLabs.Platform.dll",
+        "lib/Xamarin.iOS10/XLabs.Platform.iOS.XML",
+        "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Platform.dll",
+        "lib/wp8/XLabs.Platform.WP8.XML",
+        "lib/wp8/XLabs.Platform.WP8.dll",
+        "lib/wp8/XLabs.Platform.WinRT.winmd",
+        "lib/wp8/XLabs.Platform.XML",
+        "lib/wp8/XLabs.Platform.dll",
+        "lib/wpa81/XLabs.Platform.WP8.XML",
+        "lib/wpa81/XLabs.Platform.WP8.dll",
+        "lib/wpa81/XLabs.Platform.WinRT.winmd",
+        "lib/wpa81/XLabs.Platform.XML",
+        "lib/wpa81/XLabs.Platform.dll",
+        "xlabs.platform.2.0.5782.nupkg.sha512",
+        "xlabs.platform.nuspec"
+      ]
+    },
+    "XLabs.Serialization/2.0.5782": {
+      "sha512": "lObYD+cpUv6pnUd9IsWYj5i0sSO8EUT60KaiDKxv2VHr1oAsNC37HpWcetGezYO2nfQN5AZzVtE8ENbYOqx2Dg==",
+      "type": "package",
+      "path": "xlabs.serialization/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/XLabs.Serialization.XML",
+        "lib/Xamarin.iOS10/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.CodeAnalysisLog.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.lastcodeanalysissucceeded",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.CodeAnalysisLog.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.lastcodeanalysissucceeded",
+        "xlabs.serialization.2.0.5782.nupkg.sha512",
+        "xlabs.serialization.nuspec"
       ]
     },
     "Lot.App/1.0.0": {
@@ -2027,29 +2234,30 @@
     "MonoAndroid,Version=v9.0": [
       "Lot.App >= 1.0.0",
       "Newtonsoft.Json >= 11.0.2",
+      "XLabs.Forms >= 2.0.5782",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.3.0.908675"
+      "Xamarin.Forms >= 4.4.0.991265"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\24505\\.nuget\\packages\\": {},
+    "C:\\Users\\asus\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
+      "projectUniqueName": "D:\\work\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
       "projectName": "Lot.App.Android",
-      "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
-      "packagesPath": "C:\\Users\\24505\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App.Android\\obj\\",
+      "projectPath": "D:\\work\\LOT\\Lot.App.Android\\Lot.App.Android.csproj",
+      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+      "outputPath": "D:\\work\\LOT\\Lot.App.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\24505\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2063,8 +2271,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj": {
-              "projectPath": "D:\\work\\LOT\\bit.Lot.App\\LOT\\Lot.App\\Lot.App.csproj"
+            "D:\\work\\LOT\\Lot.App\\Lot.App.csproj": {
+              "projectPath": "D:\\work\\LOT\\Lot.App\\Lot.App.csproj"
             }
           }
         }
@@ -2077,13 +2285,17 @@
             "target": "Package",
             "version": "[11.0.2, )"
           },
+          "XLabs.Forms": {
+            "target": "Package",
+            "version": "[2.0.5782, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.3.0.908675, )"
+            "version": "[4.4.0.991265, )"
           }
         }
       }
