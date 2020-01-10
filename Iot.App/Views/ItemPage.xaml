@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Iot.App.View.ItemPage"
+             BackgroundColor="#131e54"
+             Title="任务列表">
+    <StackLayout>
+        <Grid Margin="0,0,0,0" BackgroundColor="#0d1431">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*" />
+                <ColumnDefinition Width="0.3*" />
+                <ColumnDefinition Width="0.3*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label  Text="零陵路配电...>" FontSize="Small"  TextColor="#3D75BE"  Grid.Column="0" Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Summary" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label  Text="零陵路配电...>" FontSize="Small"  TextColor="#3D75BE"  Grid.Column="1"  Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Summary" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label  Text="零陵路配电...>" FontSize="Small"  TextColor="#3D75BE"  Grid.Column="2"  Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Summary" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+        <ListView x:Name="ItemsListView"
+                ItemsSource="{Binding Id}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                ItemTapped="ToDetailPage"
+                  ItemSelected="ItemsListView_ItemSelected"
+                >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2"
+                                   Source="{Binding Status}"
+                                   HeightRequest="40"
+                                   WidthRequest="40" />
+                            <Label Grid.Column="1"
+                                   Text="{Binding Title}"
+                                   FontAttributes="Bold"   TextColor="White"/>
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="{Binding Detail}"
+                                   VerticalOptions="End"  TextColor="Gainsboro"/>
+                            <Label Grid.Column="2" Text="{Binding Time}" FontSize="Small"  HorizontalOptions="End" TextColor="Gainsboro"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <!--<Grid Margin="0,0,0,0" BackgroundColor="#0d1431" HorizontalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="0.2*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Image Source="SummaryCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="CenterAndExpand"  >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Summary" />
+                </Image.GestureRecognizers>
+            </Image>
+            
+            <Image Source="TaskCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="CenterAndExpand" Grid.Column="1" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Task" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="AlertCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="CenterAndExpand"   Grid.Column="2"  >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Alert" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="DeviceCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="CenterAndExpand"  Grid.Column="3" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Device" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="SiteCurrent.png" Aspect="AspectFit" WidthRequest="20" HeightRequest="20"        VerticalOptions="CenterAndExpand"   Grid.Column="4"  >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Image_Site" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>-->
+    </StackLayout>
+</ContentPage>
